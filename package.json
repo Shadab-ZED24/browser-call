@@ -1,0 +1,48 @@
+{
+  "name": "browser-calls",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "DEBUG=test-app* node ./bin/www",
+    "test": "NODE_ENV=test TWILIO_APP_SID=AP4180140784e108dc58b957bd00f71de6 TWILIO_AUTH_TOKEN=96f8dcf584a11a2a1e29e1267a9b9cc7 TWILIO_ACCOUNT_SID=AC10354a9c043971461b7042445550f61a MONGO_URL=mongodb://shadab_zed:Qwerty@123@ds011755.mlab.com:11755/tasklistmean ./node_modules/.bin/mocha test"
+  },
+  "description": "A sample application which shows you how to make and receive phone calls with a browser and Twilio Client",
+  "author": {
+    "name": "Shadab Khan",
+    "email": "test@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TwilioDevEd/browser-calls-node"
+  },
+  "keywords": [
+    "node",
+    "browser call",
+    "twilio",
+    "express",
+    "twiml",
+    "webhooks"
+  ],
+  "engines" : { "node" : ">=4.6.2" },
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.3.2",
+    "express": "~4.14.0",
+    "express-session": "^1.14.2",
+    "jade": "^1.11.0",
+    "mongoose": "^4.6.8",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0",
+    "twilio": "~3.0.0-rc.16"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "cheerio": "^0.22.0",
+    "connect-flash": "^0.1.1",
+    "mocha": "^3.1.2",
+    "supertest": "^2.0.1"
+  }
+}
